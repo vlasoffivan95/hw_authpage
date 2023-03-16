@@ -1,4 +1,4 @@
-@import "./components/common/styles/variable.scss";
+@use "./components/common/styles/variable.scss" as *;
 
 .appContainer {
   background-color: $bg-color;
