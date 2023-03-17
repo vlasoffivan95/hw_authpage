@@ -1,0 +1,23 @@
+.containerSignUp {
+    margin: 10px auto;
+    max-width: 50vw;
+    text-align: center;
+    color:white;
+    font-size:20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    display: flex;
+    padding: 10px;
+    margin:10px;
+    flex-direction: column;
+}
+
+.inputField {
+    padding: 10px;
+    margin:10px;
+    font-size:20px;
+    border-radius: 8px;
+}
