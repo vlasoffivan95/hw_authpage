@@ -22,14 +22,15 @@
 };
 
 .inputField {
-    border:2px solid black;
+    border:2px solid white;
     margin:10px 0;
     min-height:40px;
     padding:10px;
+    border-radius: 5px;
 }
 
 .btnLogin {
-    font-size:30px;
+    font-size:20px;
     text-align: center;
     background-color: #28d2d0;
     width:100%;
@@ -37,4 +38,21 @@
     margin-top:30px;
     padding: 20px;
     border-radius: 5px;
+    border: 2px solid $bg-color;
+}
+
+.containlabels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    vertical-align: text-top;
+}
+
+.premember {
+    margin-top:5px;
+    font-size:14px;
+}
+
+.rdBtn {
+    font-size:14px;
 }

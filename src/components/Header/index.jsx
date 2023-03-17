@@ -4,9 +4,10 @@ import logo from './logo.webp'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div>
+    <header>
+      <div className={styles.header}>
         <img src={logo} alt='logo'/>
+        <button className = {styles.btn}>Sign Up</button>
       </div>
     </header>
   );
