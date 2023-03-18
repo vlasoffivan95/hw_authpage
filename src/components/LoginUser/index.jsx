@@ -45,34 +45,33 @@ class LoginUser extends Component {
         <h1>LOGIN TO YOUR ACCOUNT</h1>
 
         <form className={styles.inputContainer} onSubmit={this.submitHandler}>
-          Email
           <input
             type="email"
             name="email"
             value={email}
             className={styles.inputField}
             onChange={this.handleLoginUser}
+            placeholder="Email address"
           />
-          Password
           <input
             type="password"
             name="password"
             value={password}
             onChange={this.handleLoginUser}
             className={styles.inputField}
+            placeholder="Password"
           />
           <div className={styles.containlabels}>
-          <label>
-            <input
-              type="checkbox"
-              name="remember"
-              checked={remember}
-              onChange={this.handleLoginUser}
-            />
-            <a className={styles.rdBtn}> Remember me </a>
-            
-          </label>
-          <a className={styles.premember}>Forgot password</a>
+            <label>
+              <input
+                type="checkbox"
+                name="remember"
+                checked={remember}
+                onChange={this.handleLoginUser}
+              />
+              <a className={styles.rdBtn}> Remember me </a>
+            </label>
+            <a className={styles.premember}>Forgot password</a>
           </div>
           <button className={styles.btnLogin} disabled={!remember}>
             LOGIN

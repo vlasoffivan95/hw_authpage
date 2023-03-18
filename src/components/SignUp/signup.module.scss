@@ -1,23 +1,67 @@
+@use "../common/styles/variable.scss" as *;
+@import url("https://fonts.cdnfonts.com/css/gotham-ssm");
+
 .containerSignUp {
-    margin: 10px auto;
-    max-width: 50vw;
-    text-align: center;
-    color:white;
-    font-size:20px;
-    display: flex;
-    flex-direction: column;
+  margin: 10px auto;
+  max-width: 595px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Gotham SSm";
 }
 
 .formContainer {
-    display: flex;
-    padding: 10px;
-    margin:10px;
-    flex-direction: column;
+  flex: 1 0 auto;
+  min-width: 285px;
+  position: relative;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 .inputField {
+  padding: 15px;
+  margin: 10px;
+  font-size: 16px;
+  height: auto;
+  display: inline-block;
+  width: 40%;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.pContainer {
+  margin: 11px auto 13px auto;
+  font-size: 18px;
+  line-height: 27px;
+  width: 80%;
+  font-family: "Gotham SSm";
+}
+
+.btnCreateAccount {
+  font-family: "Gotham SSm";
+  border: 2px solid #28d2d0;
+  border-radius: 4px;
+  background-color: #28d2d0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 10px;
+  font-weight: bold;
+}
+.btnContainer {
+    margin: 20px;
+}
+
+.inputLabel {
+    font-size: 12px;
+    font-family: "Gotham SSm";
+    font-weight: 500;
+}
+
+.inputContainer {
     padding: 10px;
-    margin:10px;
-    font-size:20px;
-    border-radius: 8px;
+    margin:10px 10px;
 }
