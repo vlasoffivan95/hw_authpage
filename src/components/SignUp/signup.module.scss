@@ -52,7 +52,7 @@
   font-weight: bold;
 }
 .btnContainer {
-    margin: 20px;
+    margin: 10px;
 }
 
 .inputLabel {
@@ -64,4 +64,29 @@
 .inputContainer {
     padding: 10px;
     margin:10px 10px;
+}
+
+
+.labelJoinAs {
+   font-size:16px;
+   display: inline-block;
+   text-align: left;
+   font-weight: 600;
+   font-family: "Gotham SSm";
+   border: 1px solid white;
+   padding: 20px 0 20px 10px;
+   margin: 20px 0;
+   width: 100%;
+}
+
+
+.spanJoinAs {
+    font-size:12px;
+    width: 100%;
+    text-align: left;
+    display: block;
+    padding-top:10px;
+    padding-left: 20px;
+    font-weight: 400;
+    
 }
