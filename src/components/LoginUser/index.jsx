@@ -5,6 +5,7 @@ const userData = {
   email: "",
   password: "",
   remember: false,
+  viewpass: false,
 };
 
 function LoginSuccess(userdata) {
@@ -38,8 +39,16 @@ class LoginUser extends Component {
     this.setState(newState);
   };
 
+  handleViewPass = () => {
+    const { viewpass } = this.state;
+    this.setState({
+      viewpass: !viewpass,
+    });
+    console.log(viewpass);
+  };
+
   render() {
-    const { email, password, remember } = this.state;
+    const { email, password, remember, viewpass } = this.state;
     return (
       <div className={styles.loginContainer}>
         <h1>LOGIN TO YOUR ACCOUNT</h1>
@@ -54,13 +63,21 @@ class LoginUser extends Component {
             placeholder="Email address"
           />
           <input
-            type="password"
+            type={viewpass ? "text" : "password"}
             name="password"
             value={password}
             onChange={this.handleLoginUser}
             className={styles.inputField}
             placeholder="Password"
           />
+
+          <div className={styles.containlabels}>
+            <label classname = {styles.lblForPassword}>
+            <input type="checkbox" onChange={this.handleViewPass}/> 
+            <span className={styles.spanPswrd}>View Password</span>
+            </label>
+          </div>
+
           <div className={styles.containlabels}>
             <label>
               <input
@@ -69,6 +86,7 @@ class LoginUser extends Component {
                 checked={remember}
                 onChange={this.handleLoginUser}
               />
+
               <a className={styles.rdBtn}> Remember me </a>
             </label>
             <a className={styles.premember}>Forgot password</a>
